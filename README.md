@@ -1,10 +1,12 @@
-## Verxio zkEVM
-Verxio Protocol is a non-custodial solution that uses stealth addresses to enable users to receive crypto on Polygon zkEVM without revealing the receiver's real address; which serves as their identity on the blockchain.
+## Verxio XRP
+Verxio Protocol is a non-custodial solution that uses stealth addresses to enable users to send and receive XRP on the XRP EVM compatible chain without revealing the receiver's real address; which serves as their identity on the blockchain.
 
 Verxio is heavily inspired by [Vitalik's recent article on stealth addresses](https://vitalik.eth.limo/general/2023/01/20/stealth.html).
 
 ## Project Overview
-Have you ever wished you could send and receive funds without anyone snooping around your business? Well, say hello to Verxio Protocol – your privacy guardian on Polygon zkEVM. We’re tackling the issue of exposing personal info during transactions by introducing stealth addresses. 
+Have you ever wished you could send and receive funds without anyone snooping around your business? Well, say hello to Verxio Protocol – your privacy guardian on the XRP EVM compatible chain. 
+
+We’re tackling the issue of exposing personal info during transactions by introducing stealth addresses. 
 
 - The project draws inspiration from existing privacy-focused blockchains like Monero and tools like Tornado Cash but aims to bridge the gap between complex and expensive privacy solutions and non-private transfers.
 
@@ -27,8 +29,8 @@ Have you ever wished you could send and receive funds without anyone snooping ar
 
 - Significance: Addressing this issue assumes paramount importance due to its direct impact on safeguarding financial confidentiality. Preserving the integrity of personal and corporate information from prying eyes is central. By introducing a user-centric solution that leverages stealth addresses for anonymous transactions, Verxio Protocol empowers users to regain control over their financial privacy and alleviate the potential pitfalls linked with identity exposure.
 
-### ✒ Technical Description
-- Verxio Protocol implements stealth addresses on Polygon zkEVM using a combination of cryptographic techniques to ensure transaction security and user privacy. Let’s break down the key steps and encryption methods involved:
+## Technical Description
+- Verxio Protocol implements stealth addresses on the XRP EVM compatible chain using a combination of cryptographic techniques to ensure transaction security and user privacy. Let’s break down the key steps and encryption methods involved:
 
 - Stealth Addresses Generation:
     The receiver generates a root spending key (receiver private key) and computes a stealth meta-address (receiver public key or receiver’s address) using elliptic curve cryptography. This stealth meta-address (receiver’s address) becomes a publicly known identifier for the receiver on the blockchain.
@@ -63,37 +65,44 @@ Verxio Protocol solution leverages these cryptographic methods to create a syste
 
 ## Implementation
 - We have started with a standard Hardhat project and added essential methods to the StealthAddress contract. To enhance credibility, we intentionally avoided making the contract upgradeable, as there's no on-chain governance currently. If an upgrade is needed, we'll deploy a new version and provide client-side support.
-- Next, we developed the UI/UX using React and TypeScript, focusing on a simple yet elegant design for both power and non-power users. The UI colors and feel are built with the Polygon zkEVM in mind.
+
+- Next, we developed the UI/UX using React and TypeScript, focusing on a simple yet elegant design for both power and non-power users. The UI colors and feel are built with the XRP EVM compatible chain in mind.
+
 - We used the Wagmi library for blockchain interactions which streamlined the process.
+
 - The elliptic library handled the complex math involved with elliptic curves, and both libraries featured TypeScript typings, making them a joy to work with.
+
 - We used Streamr Client to store all user transactions in a Data Pool on Streamr Hub
-- Tools Used: Solidity, Hardhat, Polygon zkEVM, React, Typescript, Wagmi and Metamask.
+
+- Tools Used: Solidity, Hardhat, XRP EVM compatible chain, React, Typescript, Wagmi, and Metamask.
 
 
 ## Challenges
 - The main challenge was designing the best possible user experience, which we believe the current implementation achieves.
+
 - Another challenge was signing and sending withdrawal transactions without using the connected user wallet. We resolved this by creating a custom-built transaction broadcasted via public RPC URLs, which works effectively.
 
 
-## What's next?
+## What's next for Verxio XRP?
 - Currently, Verxio Protocol only supports native coin transfers(MATIC). However, adding support for tokens and NFTs would greatly enhance its utility. We are considering implementing relayer nodes to mint and sell notes as tokens (or NFTs) in exchange for covering user fees on transfers.
-  
+
 - This approach allows users to maintain their anonymity while using note tokens to request relayers to cover fees and pay for transactions. Competition between relayers could help keep transfer fees reasonable.
-  
-- Making it live on the zkEVM Mainnet
-  
+
+- Making it live on the XRP Mainnet 
+
 - Expanding Verxio Protocol by enabling cross-chain transactions. Additionally, gas optimization in the StealthAddress contract and its interaction with the receiving side can be improved.
-  
+
 - Obtaining a legal opinion on Verxio Protocol's regulatory compliance would be beneficial. However, since the StealthAddress contract is on the blockchain and the code is available on GitHub, funds will remain accessible even if the website is shut down.
-  
+
 - Future UX improvements include notifications for funds received on new controlled stealth addresses and a mobile app (although the website is mobile-friendly). The possibilities are endless!
 
+
 ## Conclusion
-- Verxio Protocol is a user-friendly and innovative solution that addresses the growing need for privacy in blockchain transactions. By leveraging stealth addresses and the Polygon Blockchain, Verxio Protocol provides a simple and cost-effective way for users to keep their financial transactions private. With a substantial market opportunity and a focus on usability, Verxio Protocol has the potential to become a leading privacy solution in the blockchain industry.
+- Verxio Protocol is a user-friendly and innovative solution that addresses the growing need for privacy in blockchain transactions. By leveraging stealth addresses and the XRP EVM compatible chain, Verxio Protocol provides a simple and cost-effective way for users to keep their financial transactions private. With a substantial market opportunity and a focus on usability, Verxio Protocol has the potential to become a leading privacy solution in the blockchain industry.
 
 ## Useful Links
-- StealthAddress Contract: [0x4c321A088EC43F5C9e246e4894798C7c77deb1e6](https://mumbai.polygonscan.com/address/0x4c321A088EC43F5C9e246e4894798C7c77deb1e6)
-- Demo: https://verxio-zkevm.vercel.app/
+- StealthAddress Contract: [0xA2A3b38f6088d729a1454BCD2863ce87B9953079](https://evm-sidechain.xrpl.org/tx/0x7e9dfa6fbad5b7b8a177b425322b7c4e6af72c83b80bddd06db202c4c6051768)
+- Demo: https://verxio-xrp.vercel.app/
 - Stream ID: 0x546a5cb5c0add53efbc60000644aa70204b20576/VerxioPool
-- Link to Repo: https://github.com/amdonatusprince/verxio-zkEVM/
+- Link to Repo: https://github.com/amdonatusprince/verxio-XRP
 - Video: https://youtu.be/tRNhep3JL4s
