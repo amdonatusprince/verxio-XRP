@@ -98,7 +98,7 @@ Verxio Protocol solution leverages these cryptographic methods to create a syste
 
 
 ## Conclusion
-- Verxio Protocol is a user-friendly and innovative solution that addresses the growing need for privacy in blockchain transactions. By leveraging stealth addresses and the Polygon Blockchain, Verxio Protocol provides a simple and cost-effective way for users to keep their financial transactions private. With a substantial market opportunity and a focus on usability, Verxio Protocol has the potential to become a leading privacy solution in the blockchain industry.
+- Verxio Protocol is a user-friendly and innovative solution that addresses the growing need for privacy in blockchain transactions. By leveraging stealth addresses and the XRP EVM compatible chain, Verxio Protocol provides a simple and cost-effective way for users to keep their financial transactions private. With a substantial market opportunity and a focus on usability, Verxio Protocol has the potential to become a leading privacy solution in the blockchain industry.
 
 ## Useful Links
 - StealthAddress Contract: [0xA2A3b38f6088d729a1454BCD2863ce87B9953079](https://evm-sidechain.xrpl.org/tx/0x7e9dfa6fbad5b7b8a177b425322b7c4e6af72c83b80bddd06db202c4c6051768)
