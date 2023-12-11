@@ -84,7 +84,7 @@ Verxio Protocol solution leverages these cryptographic methods to create a syste
 
 
 ## What's next for Verxio XRP?
-- Currently, Verxio Protocol only supports native coin transfers(MATIC). However, adding support for tokens and NFTs would greatly enhance its utility. We are considering implementing relayer nodes to mint and sell notes as tokens (or NFTs) in exchange for covering user fees on transfers.
+- Currently, Verxio Protocol only supports native coin transfers(XRP, ETH, MATIC etc). However, adding support for tokens and NFTs would greatly enhance its utility. We are considering implementing relayer nodes to mint and sell notes as tokens (or NFTs) in exchange for covering user fees on transfers.
 
 - This approach allows users to maintain their anonymity while using note tokens to request relayers to cover fees and pay for transactions. Competition between relayers could help keep transfer fees reasonable.
 
